@@ -18,9 +18,9 @@ from django.contrib import admin
 from django.urls import path
 
 
-from myapp.views import hello
+from myapp.views import index
 
 urlpatterns = [
     path('admin/', admin.site.urls),
-    path('', hello, name='hello'),
+    path('', index, name='hello'),
 ]
